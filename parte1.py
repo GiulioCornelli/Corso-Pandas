@@ -1,9 +1,11 @@
 import pandas as pd
 
 #import csv file 
-df = pd.read_csv('data/pokemon.csv')
-print(df)
+df = pd.read_csv('data/pokemon.csv', index_col='#')
 
-#import json file
-df = pd.read_json('data/pokemon.json')
-print(df.to_string())
+#primo filtraggio
+# hp80 = df[df['HP'] == 80]
+# print(hp80)
+
+type = df[(df['Type 1'] == "Fire") & (df['Type 2'] == "Dragon")]
+print(type)
