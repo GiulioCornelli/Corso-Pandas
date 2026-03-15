@@ -23,8 +23,20 @@ uv add pandas
 
 ## Struttura del Corso
 
-- `main.py`: File principale con esempi di codice.
-- `pyproject.toml`: Configurazione del progetto.
+Il corso è organizzato utilizzando rami Git (branch), dove ogni ramo rappresenta una parte specifica del corso. Questo permette di esplorare gli argomenti in modo modulare.
+
+- **Ramo principale (`main`)**: Contiene la configurazione di base del progetto (`pyproject.toml`, `README.md`, `.gitignore`, ecc.) e le dipendenze necessarie.
+- **Rami tematici**: Ogni ramo corrisponde a un argomento del corso, contenendo il codice specifico (`parteX.py`) e dati di esempio.
+
+### Rami Disponibili
+1. **`import`**: Importazione dei dati (es. da CSV, Excel).
+2. **`Series`**: Operazioni sulle Series.
+3. **`DataFrame`**: Operazioni sui DataFrame.
+4. **`Selection`**: Selezione dei dati.
+5. **`Filtering`**: Filtraggio dei dati.
+6. **`Aggregation-and-dataclinig`**: Aggregazione e pulizia dei dati.
+
+Per esplorare una parte, fai checkout al ramo corrispondente: `git checkout <nome-ramo>`, quindi esegui i file con `uv run parteX.py`.
 
 ## Come iniziare
 
